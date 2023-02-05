@@ -1,1 +1,39 @@
+// Import modernize sheet
 @import './node_modules/modernize/modernize.css';
+
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+// Add in sass breakpoints
+$breakpoint-small: 375px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 1440px;
+
+// Set the brand colours as css variables
+:root {
+  --purple: rgb(102, 108, 163);
+  --dark-purple: rgb(19, 24, 63);
+  --grey: rgb(131, 134, 154);
+  --pink: rgb(247, 71, 128);
+  --light-pink: rgb(255, 167, 195);
+  --red-to-pink: linear-gradient(rgb(240, 42, 166), rgb(255, 111, 72));
+  --blue-to-purple: linear-gradient(rgb(72, 81, 255), rgb(240, 42, 166));
+}
+
+.heading-xl {
+}
+
+.heading-l {
+}
+
+.heading-m {
+}
+
+.heading-s {
+}
+
+.body-m {
+}
+
+.body-s {
+}
