@@ -18,22 +18,38 @@ $breakpoint-large: 1440px;
   --light-pink: rgb(255, 167, 195);
   --red-to-pink: linear-gradient(rgb(240, 42, 166), rgb(255, 111, 72));
   --blue-to-purple: linear-gradient(rgb(72, 81, 255), rgb(240, 42, 166));
+  --body-gradient: linear-gradient(#ffffff, #f0f1ff);
 }
 
-.heading-xl {
+// Define styles for elements
+// Body holds all elements on the page
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vh;
+  background-image: var(--body-gradient);
 }
 
-.heading-l {
+// The main element holds all the cards
+main {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.heading-m {
+// The footer element has the bar down the bottom
+footer {
+  background-color: var(--dark-purple);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.heading-s {
+.get-started-footer {
+  color: white;
 }
 
-.body-m {
-}
-
-.body-s {
+// Styles for id attributes
+// For the button at the top of the page
+#get-started-button {
 }
