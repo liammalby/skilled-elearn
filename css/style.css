@@ -1,0 +1,38 @@
+@import './node_modules/modernize/modernize.css';
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+:root {
+  --purple: rgb(102, 108, 163);
+  --dark-purple: rgb(19, 24, 63);
+  --grey: rgb(131, 134, 154);
+  --pink: rgb(247, 71, 128);
+  --light-pink: rgb(255, 167, 195);
+  --red-to-pink: linear-gradient(rgb(240, 42, 166), rgb(255, 111, 72));
+  --blue-to-purple: linear-gradient(rgb(72, 81, 255), rgb(240, 42, 166));
+  --body-gradient: linear-gradient(#ffffff, #f0f1ff);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vh;
+  background-image: var(--body-gradient);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+footer {
+  background-color: var(--dark-purple);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.get-started-footer {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
