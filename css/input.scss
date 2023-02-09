@@ -37,8 +37,7 @@ main {
   grid-template-columns: 1fr;
 }
 
-// The footer element has the bar down the bottom
-footer {
+The footer element has the bar down the bottom footer {
   background-color: var(--dark-purple);
   display: flex;
   align-items: center;
@@ -52,4 +51,12 @@ footer {
 // Styles for id attributes
 // For the button at the top of the page
 #get-started-button {
+  width: 167px;
+  height: 56px;
+  border-radius: 50px;
+  border-style: none;
+  background-image: var(--red-to-pink);
+  color: white;
+  font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
