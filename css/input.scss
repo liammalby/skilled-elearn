@@ -2,7 +2,7 @@
 @import './node_modules/modernize/modernize.css';
 
 // Import fonts
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800;900&display=swap');
 
 // Add in sass breakpoints
 $breakpoint-small: 375px;
@@ -12,7 +12,7 @@ $breakpoint-large: 1440px;
 // Set the brand colours as css variables
 :root {
   --purple: rgb(102, 108, 163);
-  --dark-purple: rgb(19, 24, 63);
+  --dark-purple: #13183f;
   --grey: rgb(131, 134, 154);
   --pink: rgb(247, 71, 128);
   --light-pink: rgb(255, 167, 195);
@@ -27,7 +27,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  min-width: 100vh;
+  // max-width: 60vw;
   background-image: var(--body-gradient);
 }
 
@@ -37,15 +37,27 @@ main {
   grid-template-columns: 1fr;
 }
 
-The footer element has the bar down the bottom footer {
+// The footer element has the bar down the bottom
+footer {
   background-color: var(--dark-purple);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 120px;
 }
 
+// Class definitions
 .get-started-footer {
   color: white;
+}
+
+.heading-xl {
+  // margin: 1rem 1rem;
+  font-family: 'Plus Jakarta Sans';
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--dark-purple);
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 50%);
 }
 
 // Styles for id attributes
