@@ -76,5 +76,6 @@ footer {
 
 #hero-img {
   align-self: center;
+  flex-shrink: 0;
   // TODO: Work out what the hell goes in here so that the image stays the same size no matter what, but that it also expands the size of its container???
 }
