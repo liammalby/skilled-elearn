@@ -27,16 +27,14 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  max-width: 100vw;
+  // max-width: 100vw;
   background-image: var(--body-gradient);
 }
 
 // The main element holds all the cards
 main {
-  // BUG - setting the display to 'grid' makes the content overflow, but only when checking on the inspector developer tools
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 100vw;
 }
 
 // The footer element has the bar down the bottom
@@ -74,4 +72,9 @@ footer {
   color: white;
   font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
   font-weight: 700;
+}
+
+#hero-img {
+  align-self: center;
+  // TODO: Work out what the hell goes in here so that the image stays the same size no matter what, but that it also expands the size of its container???
 }
