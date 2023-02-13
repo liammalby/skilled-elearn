@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800;900&display=swap");
+@import './reset.css';
+:root {
+  --purple: rgb(102, 108, 163);
+  --dark-purple: #13183f;
+  --grey: rgb(131, 134, 154);
+  --pink: rgb(247, 71, 128);
+  --light-pink: rgb(255, 167, 195);
+  --red-to-pink: linear-gradient(rgb(240, 42, 166), rgb(255, 111, 72));
+  --blue-to-purple: linear-gradient(rgb(72, 81, 255), rgb(240, 42, 166));
+  --body-gradient: linear-gradient(#ffffff, #f0f1ff);
+}
+
 body {
   display: flex;
   flex-direction: column;
