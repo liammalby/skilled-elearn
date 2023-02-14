@@ -1,5 +1,5 @@
-@import './node_modules/modernize/modernize.css';
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800;900&display=swap");
+@import './reset.css';
 :root {
   --purple: rgb(102, 108, 163);
   --dark-purple: #13183f;
@@ -14,13 +14,14 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   background-image: var(--body-gradient);
+  background-attachment: fixed;
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr;
+  padding: 1.5rem;
 }
 
 footer {
@@ -30,6 +31,20 @@ footer {
   justify-content: space-between;
   height: 120px;
   min-width: 100vw;
+}
+
+.card {
+  border-style: solid;
+  border-width: 3px;
+  border-color: red;
+  padding-top: 4rem;
+}
+
+.card img {
+  border-style: solid;
+  border-width: 3px;
+  border-color: red;
+  translate: 0% -50%;
 }
 
 .get-started-footer {
@@ -57,6 +72,7 @@ footer {
 
 #hero-img {
   align-self: center;
+  flex-shrink: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
